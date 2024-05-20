@@ -23,7 +23,7 @@ class MoviesController < ApplicationController
 
   def index
     if params[:search].present?
-      render json: MoviesRepresenter.new(Movie.order(params['search'])).as_json
+      render json: MoviesRepresenter.new(Movie.order(params[:search] => :asc)).as_json
     else
       render json: MoviesRepresenter.new(Movie.order(release_year: :asc)).as_json
     end
