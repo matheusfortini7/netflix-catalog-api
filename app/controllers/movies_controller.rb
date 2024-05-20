@@ -1,6 +1,4 @@
 class MoviesController < ApplicationController
-  FILE_PATH = "./lib/csv/netflix_titles.csv"
-
   def create
     MovieImporterService.call
     render json: { status: :success }
