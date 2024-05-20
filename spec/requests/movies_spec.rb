@@ -27,9 +27,6 @@ describe 'Catálogo filmes API', type: :request do
 
       expect(JSON.parse(response.body).first['country']).to eq('Argentina')
     end
-
-
-
   end
 
   describe 'POST /movies' do
@@ -40,5 +37,4 @@ describe 'Catálogo filmes API', type: :request do
       expect(Movie.count).to eq(131)
     end
   end
-
 end
