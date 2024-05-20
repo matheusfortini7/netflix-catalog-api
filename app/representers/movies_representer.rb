@@ -8,7 +8,7 @@ class MoviesRepresenter
       {
         "id":           movie.show_id,
         "title":        movie.title,
-        "genre":        movie.show_type,
+        "genre":        movie.type,
         "year":         movie.release_year,
         "country":      movie.country,
         "published_at": movie.date_added,

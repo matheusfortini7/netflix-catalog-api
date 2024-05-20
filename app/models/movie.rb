@@ -2,7 +2,7 @@ class Movie
   include Mongoid::Document
 
   field :show_id, type: String
-  field :show_type, type: String
+  field :type, type: String
   field :title, type: String
   field :director, type: String
   field :cast, type: String
