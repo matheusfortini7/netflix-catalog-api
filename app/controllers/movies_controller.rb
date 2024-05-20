@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
       Movie.create(
         show_id:      row[:show_id],
         show_type:    row[:type],
-        title:        row[:title].strip,
+        title:        row[:title],
         director:     row[:director],
         cast:         row[:cast],
         country:      row[:country],

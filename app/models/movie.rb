@@ -13,4 +13,6 @@ class Movie
   field :duration, type: String
   field :listed_in, type: String
   field :description, type: String
+
+  index({ show_id: 1 }, { unique: true })
 end
