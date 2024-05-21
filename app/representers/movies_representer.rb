@@ -6,7 +6,7 @@ class MoviesRepresenter
   def as_json
     @movies.map do |movie|
       {
-        "id":           movie.show_id,
+        "id":           movie.id,
         "title":        movie.title,
         "genre":        movie.type,
         "year":         movie.release_year,
